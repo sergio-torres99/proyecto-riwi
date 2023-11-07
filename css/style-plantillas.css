@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+/* ------------------ Navbar ------------------ */
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-links {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .nav-links li {
+    transition: all 0.2s;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-links li img {
+    width: 70px;
+    height: 30px;
+
+}
+
+nav .nav-links li a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+
+nav .translate-login {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .translate-login svg:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ------------------ Templates ------------------ */
+
+.container {
+    padding-top: 50px;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .subtitle-search-container {
+    width: 90%;
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h1,
+h2 {
+    color: white;
+}
+
+.container .subtitle-search-container .filter-search {
+    width: 35%;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .subtitle-search-container .filter-search .filter {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .subtitle-search-container .filter-search .filter label {
+    color: white;
+    font-size: 20px;
+}
+
+.container .subtitle-search-container .filter-search input {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.container .subtitle-search-container .filter-search select {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container .subtitle-search-container .filter-search input:focus,
+select:focus {
+    outline: none;
+}
+
+.img-container {
+    /* background-color: darkgrey; */
+    width: 100%;
+    height: 100%;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+.fila img {
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.selector {
+    width: 100%;
+    height: 20vh;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ---------------------------- Footer Section ---------------------------- */
+
+footer {
+    border-top: 1px white solid;
+    color: wheat;
+    margin: auto;
+    width: 80%;
+    height: 40vh;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .first-column {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer .first-column img {
+    width: 100px;
+    height: 50px;
+}
+
+footer .first-column .social-media-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.2s;
+}
+
+footer .first-column .social-media-container svg {
+    transition: 0.2s;
+}
+
+footer .first-column .social-media-container svg:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+footer .second-column {
+    width: 20%;
+    height: 100%;
+    /* background-color: gold; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .second-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+footer .second-column ul li {
+    font-size: 16px;
+    padding: 9px 0;
+    color: white;
+}
+
+footer .second-column ul li:hover {
+    cursor: pointer;
+
+    color: rgb(105, 128, 255);
+}
+
+#help-title,
+#ws-title {
+    border-bottom: 1px solid rgb(80, 101, 221);
+    padding-bottom: 1px;
+    font-size: 20px;
+}

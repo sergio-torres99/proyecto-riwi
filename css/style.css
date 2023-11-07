@@ -1,0 +1,568 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d0d0d;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+/* ----------------------------  Navbar ---------------------------- */
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-links {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .nav-links li {
+    transition: all 0.2s;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-links li img {
+    width: 70px;
+    height: 30px;
+
+}
+
+nav .nav-links li a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+
+nav .translate-login {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .translate-login svg:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ---------------------------- Main Page ---------------------------- */
+.main-section-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.main-section-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4
+}
+
+.main-section-container .home-content {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 70%;
+    height: 80%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-section-container .home-content .btn {
+    border: none;
+    color: white;
+    margin-top: 30px;
+}
+
+.main-section-container .home-content .btn a {
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+
+    background-color: rgb(80, 101, 221);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.main-section-container .home-content .btn a:hover {
+    background-color: rgb(105, 128, 255);
+    transition: 0.4s;
+}
+
+/* ---------------------------- Second Section ---------------------------- */
+.second-section-container {
+    width: 100%;
+    height: 100vh;
+    padding-left: 50px;
+}
+
+.second-section-container h2 {
+    color: white;
+}
+
+.second-section-container .flex-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section-container .flex-container .images-container {
+    width: 35%;
+    height: 70%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.second-section-container .flex-container .images-container img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.second-section-container .flex-container .images-container .img-1 {
+    width: 70%;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.second-section-container .flex-container .images-container .img-2 {
+    width: 50%;
+    height: 30%;
+    top: -10px;
+    left: -100px;
+}
+
+.second-section-container .flex-container .images-container .img-3 {
+    width: 40%;
+    height: 40%;
+    right: 20px;
+    bottom: -25px;
+}
+
+.second-section-container .flex-container .list-container {
+    width: 30%;
+    height: 60%;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    border-radius: 15px;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+.second-section-container .flex-container .list-container ul {
+    list-style: circle;
+    margin-top: 20px;
+}
+
+.second-section-container .flex-container .list-container ul li {
+    margin-top: 20px;
+}
+
+.second-section-container .flex-container .list-container button {
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(80, 101, 221);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 40px;
+
+}
+
+.second-section-container .flex-container .list-container button:hover {
+    background-color: rgb(105, 128, 255);
+    transition: 0.4s;
+}
+
+/* ---------------------------- Third Section ---------------------------- */
+
+.third-section-container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: green; */
+}
+
+.third-section-container .cards-container {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    /* background-color: blue; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.third-section-container .cards-container .card {
+    width: 45%;
+    height: 90%;
+    color: white;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 15px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.third-section-container .cards-container .card h3 {
+    letter-spacing: 2px;
+}
+
+.third-section-container .cards-container .card p {
+    padding-left: 5px;
+}
+
+.third-section-container .cards-container .card img {
+    width: 40px;
+}
+
+/* ---------------------------- Fourth Section ---------------------------- */
+
+.fourth-section-container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fourth-section-container h2 {
+    font-size: 40px;
+}
+
+.fourth-section-container h3,
+h4 {
+    font-size: 30px;
+}
+
+.fourth-section-container .box-container {
+    /* background-color: cadetblue; */
+    width: 90%;
+    height: 80vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fourth-section-container .box-container .box {
+    /* background-color: aqua; */
+    width: 30%;
+    height: 60vh;
+    border: 1px solid white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fourth-section-container .box-container .box .box-list {
+    /* background-color: chartreuse; */
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.fourth-section-container .box-container .box button {
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(80, 101, 221);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 40px;
+}
+
+.fourth-section-container .box-container .box button:hover {
+    background-color: rgb(105, 128, 255);
+    transition: 0.4s;
+}
+
+/* ---------------------------- Fifth Section ---------------------------- */
+
+.fifth-section-container {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fifth-section-container .subtitles {
+    text-align: center;
+}
+
+.fifth-section-container .subtitles,
+h2 {
+    font-size: 40px;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+
+.fifth-section-container .image-text {
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifth-section-container .image-text p {
+    width: 50%;
+    font-size: 20px;
+    padding: 5px 40px 5px 60px;
+}
+
+.fifth-section-container .image-text img {
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.fifth-section-container .subtitles h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+/* ---------------------------- Sixth Section ---------------------------- */
+
+.sixth-section-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sixth-section-container .titles {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth-section-container .titles h3 {
+    margin: 15px 0;
+}
+
+.sixth-section-container .titles h2 {
+    padding: 0;
+}
+
+.sixth-section-container form {
+    width: 40%;
+    height: 70%;
+    color: white;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sixth-section-container form div {
+    width: 60%;
+    margin: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sixth-section-container form input {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.sixth-section-container form label {
+    font-size: 20px;
+}
+
+.sixth-section-container form input:focus {
+    outline: none;
+}
+
+.sixth-section-container form textarea {
+    resize: none;
+    width: 60%;
+    height: 70px;
+    border-radius: 5px;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+.sixth-section-container form textarea:focus {
+    outline: none;
+}
+
+.sixth-section-container form button {
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(80, 101, 221);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 40px;
+}
+
+.sixth-section-container form button:hover {
+    background-color: rgb(105, 128, 255);
+    transition: 0.4s;
+}
+
+/* ---------------------------- Footer Section ---------------------------- */
+
+footer {
+    border-top: 1px white solid;
+    color: wheat;
+    margin: auto;
+    width: 80%;
+    height: 40vh;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .first-column {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer .first-column img {
+    width: 100px;
+    height: 50px;
+}
+
+footer .first-column .social-media-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.2s;
+}
+
+footer .first-column .social-media-container svg {
+    transition: 0.2s;
+}
+
+footer .first-column .social-media-container svg:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+footer .second-column {
+    width: 20%;
+    height: 100%;
+    /* background-color: gold; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .second-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+footer .second-column ul li {
+    font-size: 16px;
+    padding: 9px 0;
+    color: white;
+}
+
+footer .second-column ul li:hover {
+    cursor: pointer;
+
+    color: rgb(105, 128, 255);
+}
+
+#help-title,
+#ws-title {
+    border-bottom: 1px solid rgb(80, 101, 221);
+    padding-bottom: 1px;
+    font-size: 20px;
+}
